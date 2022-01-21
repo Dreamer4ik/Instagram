@@ -9,21 +9,49 @@
 /* Begin PBXBuildFile section */
 		DF99ED99279AC13F00761CCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99ED98279AC13F00761CCD /* AppDelegate.swift */; };
 		DF99ED9B279AC13F00761CCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99ED9A279AC13F00761CCD /* SceneDelegate.swift */; };
-		DF99ED9D279AC13F00761CCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99ED9C279AC13F00761CCD /* ViewController.swift */; };
+		DF99ED9D279AC13F00761CCD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99ED9C279AC13F00761CCD /* HomeViewController.swift */; };
 		DF99EDA0279AC13F00761CCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF99ED9E279AC13F00761CCD /* Main.storyboard */; };
 		DF99EDA2279AC14000761CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF99EDA1279AC14000761CCD /* Assets.xcassets */; };
 		DF99EDA5279AC14000761CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF99EDA3279AC14000761CCD /* LaunchScreen.storyboard */; };
+		DF99EDB2279AC30C00761CCD /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99EDB1279AC30C00761CCD /* ExploreViewController.swift */; };
+		DF99EDB4279AC34700761CCD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99EDB3279AC34700761CCD /* CameraViewController.swift */; };
+		DF99EDB6279AC36E00761CCD /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99EDB5279AC36E00761CCD /* NotificationsViewController.swift */; };
+		DF99EDB8279AC38E00761CCD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99EDB7279AC38E00761CCD /* ProfileViewController.swift */; };
+		DF99EDBD279AC43900761CCD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99EDBC279AC43900761CCD /* LoginViewController.swift */; };
+		DF99EDBF279AC45D00761CCD /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99EDBE279AC45D00761CCD /* RegistrationViewController.swift */; };
+		DF99EDC1279AC48E00761CCD /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99EDC0279AC48E00761CCD /* PostViewController.swift */; };
+		DF99EDC3279AC4CF00761CCD /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99EDC2279AC4CF00761CCD /* EditProfileViewController.swift */; };
+		DF99EDC5279AC4FF00761CCD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99EDC4279AC4FF00761CCD /* SettingsViewController.swift */; };
+		DF99EDC7279AC52100761CCD /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99EDC6279AC52100761CCD /* ListViewController.swift */; };
+		DF99EDC9279AC54600761CCD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99EDC8279AC54600761CCD /* SearchViewController.swift */; };
+		DF99EDCB279AC57800761CCD /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99EDCA279AC57800761CCD /* SearchResultViewController.swift */; };
+		DF99EDCD279AC5C800761CCD /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99EDCC279AC5C800761CCD /* PostEditorViewController.swift */; };
+		DF99EDCF279AC5F100761CCD /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99EDCE279AC5F100761CCD /* PublishPostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF99ED95279AC13F00761CCD /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF99ED98279AC13F00761CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF99ED9A279AC13F00761CCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF99ED9C279AC13F00761CCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF99ED9C279AC13F00761CCD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DF99ED9F279AC13F00761CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF99EDA1279AC14000761CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF99EDA4279AC14000761CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF99EDA6279AC14000761CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF99EDB1279AC30C00761CCD /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		DF99EDB3279AC34700761CCD /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		DF99EDB5279AC36E00761CCD /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		DF99EDB7279AC38E00761CCD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DF99EDBC279AC43900761CCD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DF99EDBE279AC45D00761CCD /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		DF99EDC0279AC48E00761CCD /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		DF99EDC2279AC4CF00761CCD /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		DF99EDC4279AC4FF00761CCD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DF99EDC6279AC52100761CCD /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		DF99EDC8279AC54600761CCD /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DF99EDCA279AC57800761CCD /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		DF99EDCC279AC5C800761CCD /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
+		DF99EDCE279AC5F100761CCD /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +84,93 @@
 		DF99ED97279AC13F00761CCD /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
-				DF99ED98279AC13F00761CCD /* AppDelegate.swift */,
-				DF99ED9A279AC13F00761CCD /* SceneDelegate.swift */,
-				DF99ED9C279AC13F00761CCD /* ViewController.swift */,
-				DF99ED9E279AC13F00761CCD /* Main.storyboard */,
-				DF99EDA1279AC14000761CCD /* Assets.xcassets */,
-				DF99EDA3279AC14000761CCD /* LaunchScreen.storyboard */,
+				DF99EDAF279AC1DB00761CCD /* Resources */,
+				DF99EDAE279AC1CA00761CCD /* Models */,
+				DF99EDAD279AC1C200761CCD /* Views */,
+				DF99EDAC279AC19700761CCD /* Controllers */,
 				DF99EDA6279AC14000761CCD /* Info.plist */,
 			);
 			path = Instagram;
+			sourceTree = "<group>";
+		};
+		DF99EDAC279AC19700761CCD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF99EDBA279AC40000761CCD /* Other */,
+				DF99EDB9279AC3B600761CCD /* Core Tabs */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DF99EDAD279AC1C200761CCD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF99EDB0279AC23F00761CCD /* Storyboards */,
+				DF99EDA1279AC14000761CCD /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF99EDAE279AC1CA00761CCD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF99EDAF279AC1DB00761CCD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF99ED98279AC13F00761CCD /* AppDelegate.swift */,
+				DF99ED9A279AC13F00761CCD /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF99EDB0279AC23F00761CCD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DF99ED9E279AC13F00761CCD /* Main.storyboard */,
+				DF99EDA3279AC14000761CCD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DF99EDB9279AC3B600761CCD /* Core Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				DF99ED9C279AC13F00761CCD /* HomeViewController.swift */,
+				DF99EDB1279AC30C00761CCD /* ExploreViewController.swift */,
+				DF99EDB3279AC34700761CCD /* CameraViewController.swift */,
+				DF99EDB5279AC36E00761CCD /* NotificationsViewController.swift */,
+				DF99EDB7279AC38E00761CCD /* ProfileViewController.swift */,
+			);
+			path = "Core Tabs";
+			sourceTree = "<group>";
+		};
+		DF99EDBA279AC40000761CCD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DF99EDBB279AC40C00761CCD /* Onboarding */,
+				DF99EDC0279AC48E00761CCD /* PostViewController.swift */,
+				DF99EDC2279AC4CF00761CCD /* EditProfileViewController.swift */,
+				DF99EDC4279AC4FF00761CCD /* SettingsViewController.swift */,
+				DF99EDC6279AC52100761CCD /* ListViewController.swift */,
+				DF99EDC8279AC54600761CCD /* SearchViewController.swift */,
+				DF99EDCA279AC57800761CCD /* SearchResultViewController.swift */,
+				DF99EDCC279AC5C800761CCD /* PostEditorViewController.swift */,
+				DF99EDCE279AC5F100761CCD /* PublishPostViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		DF99EDBB279AC40C00761CCD /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DF99EDBC279AC43900761CCD /* LoginViewController.swift */,
+				DF99EDBE279AC45D00761CCD /* RegistrationViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +244,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF99ED9D279AC13F00761CCD /* ViewController.swift in Sources */,
+				DF99EDC3279AC4CF00761CCD /* EditProfileViewController.swift in Sources */,
+				DF99EDB2279AC30C00761CCD /* ExploreViewController.swift in Sources */,
+				DF99EDCF279AC5F100761CCD /* PublishPostViewController.swift in Sources */,
+				DF99EDB4279AC34700761CCD /* CameraViewController.swift in Sources */,
+				DF99ED9D279AC13F00761CCD /* HomeViewController.swift in Sources */,
+				DF99EDBF279AC45D00761CCD /* RegistrationViewController.swift in Sources */,
+				DF99EDCD279AC5C800761CCD /* PostEditorViewController.swift in Sources */,
+				DF99EDC1279AC48E00761CCD /* PostViewController.swift in Sources */,
+				DF99EDB6279AC36E00761CCD /* NotificationsViewController.swift in Sources */,
+				DF99EDCB279AC57800761CCD /* SearchResultViewController.swift in Sources */,
+				DF99EDBD279AC43900761CCD /* LoginViewController.swift in Sources */,
+				DF99EDC9279AC54600761CCD /* SearchViewController.swift in Sources */,
+				DF99EDB8279AC38E00761CCD /* ProfileViewController.swift in Sources */,
 				DF99ED99279AC13F00761CCD /* AppDelegate.swift in Sources */,
 				DF99ED9B279AC13F00761CCD /* SceneDelegate.swift in Sources */,
+				DF99EDC7279AC52100761CCD /* ListViewController.swift in Sources */,
+				DF99EDC5279AC4FF00761CCD /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
