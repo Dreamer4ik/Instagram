@@ -11,6 +11,8 @@ import UIKit
 final class ProfileViewController: UIViewController {
     private var collectionView: UICollectionView?
     
+    private var userPosts = [UserPost]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -26,7 +28,6 @@ final class ProfileViewController: UIViewController {
         collectionView = UICollectionView(frame: .zero,
                                           collectionViewLayout: layout)
         
-        collectionView?.backgroundColor = .red
         //Cell
         collectionView?.register(PhotoCollectionViewCell.self,
                                  forCellWithReuseIdentifier: PhotoCollectionViewCell.identifier)
@@ -87,13 +88,16 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         if section == 0 {
             return 0
         }
+//        return userPosts.count
         return 30
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let model = userPosts[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotoCollectionViewCell.identifier,
                                                       for: indexPath) as! PhotoCollectionViewCell
         
+//        cell.configure(model: model)
         cell.configure(imageName: "test")
         
         return cell
@@ -101,6 +105,13 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        
+        // get the model and open post controller
+//        let model = userPosts[indexPath.row]
+        let vc = PostViewController(model: nil)
+        vc.title = "Post"
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     
@@ -125,7 +136,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         let profileHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
                                                                      withReuseIdentifier: ProfileInfoHeaderCollectionReusableView.identifier,
                                                                      for: indexPath) as! ProfileInfoHeaderCollectionReusableView
-        
+        profileHeader.delegate = self
         return profileHeader
     }
     
@@ -139,5 +150,36 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         return CGSize(width: collectionView.width,
                       height: 65)
     }
+    
+}
+
+//MARK: - ProfileInfoHeaderCollectionReusableViewDelegate
+extension ProfileViewController: ProfileInfoHeaderCollectionReusableViewDelegate {
+    
+    func profileHeaderDidTapPostsButton(_ header: ProfileInfoHeaderCollectionReusableView) {
+        // scroll to the posts
+        collectionView?.scrollToItem(at: IndexPath(row: 0, section: 1), at: .top, animated: true)
+    }
+    
+    func profileHeaderDidTapFollowersButton(_ header: ProfileInfoHeaderCollectionReusableView) {
+        let vc = ListViewController()
+        vc.title = "Followers"
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func profileHeaderDidTapFollowingButton(_ header: ProfileInfoHeaderCollectionReusableView) {
+        let vc = ListViewController()
+        vc.title = "Following"
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func profileHeaderDidTapEditProfileButton(_ header: ProfileInfoHeaderCollectionReusableView) {
+        let vc = EditProfileViewController()
+        vc.title = "Edit Profile"
+        present(UINavigationController(rootViewController: vc), animated: true, completion: nil)
+    }
+    
     
 }
