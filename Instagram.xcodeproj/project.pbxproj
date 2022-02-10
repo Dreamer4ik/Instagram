@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C42450F27B52BDA004BBEEB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42450E27B52BDA004BBEEB /* Models.swift */; };
 		2C45858327A0063A00CA6561 /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C45858227A0063A00CA6561 /* FormTableViewCell.swift */; };
 		2C45858627A023A700CA6561 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C45858527A023A700CA6561 /* PhotoCollectionViewCell.swift */; };
 		2C45858827A0251B00CA6561 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C45858727A0251B00CA6561 /* ProfileInfoHeaderCollectionReusableView.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C42450E27B52BDA004BBEEB /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = SOURCE_ROOT; };
 		2C45858227A0063A00CA6561 /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
 		2C45858527A023A700CA6561 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		2C45858727A0251B00CA6561 /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		DF99EDAE279AC1CA00761CCD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2C42450E27B52BDA004BBEEB /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				DF05A309279F284500570C35 /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				DF99EDCD279AC5C800761CCD /* PostEditorViewController.swift in Sources */,
 				DF1B24A9279B19A0009F72BF /* StorageManager.swift in Sources */,
+				2C42450F27B52BDA004BBEEB /* Models.swift in Sources */,
 				2C45858327A0063A00CA6561 /* FormTableViewCell.swift in Sources */,
 				DF99EDC1279AC48E00761CCD /* PostViewController.swift in Sources */,
 				2C45858A27A0263200CA6561 /* ProfileTabsCollectionReusableView.swift in Sources */,
