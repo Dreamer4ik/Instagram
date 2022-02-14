@@ -17,6 +17,7 @@ struct User {
     let username: String
     let bio: String
     let name: (first: String, last: String)
+    let profilePhoto: URL
     let birhDate: Date
     let gender: Gender
     let counts: UserCounts
@@ -38,7 +39,7 @@ public struct UserPost {
     let identifier: String
     let postType: UserPostType
     let thumbnailImage: URL
-    let postUrl: URL // either video url or full resolution photo
+    let postURL: URL // either video url or full resolution photo
     let caption: String?
     let likeCount: [PostLike]
     let comments: [PostComment]
