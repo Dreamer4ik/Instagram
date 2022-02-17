@@ -8,11 +8,32 @@
 import UIKit
 import Firebase
 
+struct HomeFeedRenderViewModel {
+    let header: PostRenderViewModel
+    let post: PostRenderViewModel
+    let actions: PostRenderViewModel
+    let comments: PostRenderViewModel
+}
+
 class HomeViewController: UIViewController {
+    
+    private var feedRenderModels = [HomeFeedRenderViewModel]()
+    
     private let tableView: UITableView = {
         let table = UITableView()
+        //Register cells
         table.register(IGFeedPostTableViewCell.self,
                        forCellReuseIdentifier: IGFeedPostTableViewCell.identifier)
+        
+        table.register(IGFeedPostHeaderTableViewCell.self,
+                       forCellReuseIdentifier: IGFeedPostHeaderTableViewCell.identifier)
+        
+        table.register(IGFeedPostActionsTableViewCell.self,
+                       forCellReuseIdentifier: IGFeedPostActionsTableViewCell.identifier)
+        
+        table.register(IGFeedPostGeneralTableViewCell.self,
+                       forCellReuseIdentifier: IGFeedPostGeneralTableViewCell.identifier)
+        
         return table
     }()
     
